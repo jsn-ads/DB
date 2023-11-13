@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Copiando dados para a tabela bw7db.usuarios: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela bw7db.usuarios: ~5 rows (aproximadamente)
 INSERT INTO `usuarios` (`id`, `nome`, `cadastro`) VALUES
 	(1, 'Jose Neto', '2023-10-27'),
 	(2, 'Pedro', '2023-10-27'),
