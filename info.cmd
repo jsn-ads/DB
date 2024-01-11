@@ -12,3 +12,7 @@ TEMPO
     TIME        HH:MM:SS
     DATETIME    YYYY-MM-DD HH:MM:SS
     TIMESTAMP   converte data em segundos , aparti de 1970-01-01
+
+SELECT
+    SELECT * FROM xxxxx;             Seleciona todos o registros da tabela   xxxxx
+    SELECT xyz , dgf FROM xxxxx;     Seleciona a coluna especifica da tabela xxxxx
