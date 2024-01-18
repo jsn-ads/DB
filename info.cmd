@@ -16,3 +16,4 @@ TEMPO
 SELECT
     SELECT * FROM xxxxx;             Seleciona todos o registros da tabela   xxxxx
     SELECT xyz , dgf FROM xxxxx;     Seleciona a coluna especifica da tabela xxxxx
+    SELECT * FROM xxxxx WHERE id = X Seleciona o registros pela condição WHERE seguido por parametro que pode ser 1 ou N dados
