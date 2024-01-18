@@ -14,6 +14,21 @@ TEMPO
     TIMESTAMP   converte data em segundos , aparti de 1970-01-01
 
 SELECT
-    SELECT * FROM xxxxx;             Seleciona todos o registros da tabela   xxxxx
-    SELECT xyz , dgf FROM xxxxx;     Seleciona a coluna especifica da tabela xxxxx
-    SELECT * FROM xxxxx WHERE id = X Seleciona o registros pela condição WHERE seguido por parametro que pode ser 1 ou N dados
+
+    SELECT
+        SELECT * FROM xxxxx;             "Seleciona todos o registros da tabela   xxxxx"
+        SELECT xyz , dgf FROM xxxxx;     "Seleciona a coluna especifica da tabela xxxxx"
+
+    WHERE condição
+        SELECT * FROM xxxxx WHERE id = X "Seleciona o registros pela condição WHERE seguido por parametro que pode ser 1 ou N dados"
+
+    OR AND <> <= >= != operadores
+
+        < menor 
+        <= menor igual
+        > maior
+        >= maior igual
+        != diferente
+        AND "todas as condições devem se satisfeita"
+        OR "apenas uma condição deve se satisfeita"
+
