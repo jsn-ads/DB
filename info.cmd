@@ -16,3 +16,7 @@ TEMPO
 SELECT
     SELECT * FROM xxxxx;             Seleciona todos o registros da tabela   xxxxx
     SELECT xyz , dgf FROM xxxxx;     Seleciona a coluna especifica da tabela xxxxx
+
+SELECT LIKE
+    SELECT * FROM table WHERE field LIKE "%"
+        "%xxx"
