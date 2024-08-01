@@ -16,3 +16,10 @@ TEMPO
 SELECT
     SELECT * FROM xxxxx;             Seleciona todos o registros da tabela   xxxxx
     SELECT xyz , dgf FROM xxxxx;     Seleciona a coluna especifica da tabela xxxxx
+
+SELECT CONDICIONAIS
+    LIKE
+        SELECT * FROM xxx WHERE yyy LIKE '%'     
+            '%zzz' buscara registros que termina com informação zzz 
+            'zzz%' buscara registros que começa com a informação zzz
+            '%zzz%' buscara registros que tenha a informação zzz
