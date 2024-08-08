@@ -46,3 +46,17 @@ SELECT
 
             SELECT * FROM table WHERE field IN (1 , 3 , 5);
             IN "utiliza para agrupar dados , ex: exibir uma lista de produtos de 3 fornecedores (1,3,5)"
+
+            ORDER BY
+
+                SELECT * FROM table ORDER BY field DESC 
+
+                "ordeção cascata"
+
+                SELECT * FROM table ORDER BY field ASC, field2 ASC
+
+                SELECT * FROM table ORDER BY field ASC, field2 DESC
+                
+                ASC "agrupa as informações em ordem crescente ou ordem alfabetica"
+                DESC "agrupa as informações em ordem descrecente ou ordem alfabetica inversa"
+                OBS : "a ordem sempre vem depois das condições"
