@@ -117,3 +117,9 @@ SELECT SUM(*)
 SELECT COUNT(*), SUM(*), AVG > WHERE
 
     SELECT COUNT(field) AS "A1", SUM(field1) AS "A2", AVG(field2) AS "A3" FROM table WHERE field4 = 1
+
+SELECT GROUP BY
+
+    SELECT SUM(field) AS "total", field1 FROM table GROUP BY field2
+
+    GROUP BY : "o group by deve ser utilizado junto com SUM ou AVG ou COUNT, pois a forma correta de utiliza e agrupar trazendo resultado ex: tenho total 300 alunos e 5 turmas , ele vai trazer quantos alunos por turma tem"
