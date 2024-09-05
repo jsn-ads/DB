@@ -90,5 +90,30 @@ SELECT > WHERE > LIKE , BETWEEN , IN > ORDER BY ASC DESC > LIMIT
             LIMIT 3 "limita a pesquisa nos 3 primeiros registro"
             LIMIT 4,3 "limita a pesquisa em 3 registro aparti do registro 4 em diante"
 
+SELECT COUNT(*)
 
+    SELECT COUNT(field) FROM table;
 
+    SELECT COUNT(field) AS "EX:nome" FROM table WHERE field1 = 1
+
+    COUNT : "retorna a quantidade de registro podendo utiliza condicionais ou não"
+
+SELECT AVG(*)
+
+    SELECT AVG(field) FROM table
+
+    SELECT AVG(field) AS "EX: media" FROM table WHERE field1 = 1
+
+    AVG : "retorna a media da quantidade ou valor da tabela de registro podendo utiliza condicionais ou não"
+
+SELECT SUM(*)
+
+    SELECT SUM(field) FROM table
+
+    SELECT SUM(field) as "EX : soma total" FROM table WHERE field = 1
+
+    SUM : "retorna a soma dos dados selecionais da tabela podendo utiliza condicionais ou não"
+
+SELECT COUNT(*), SUM(*), AVG > WHERE
+
+    SELECT COUNT(field) AS "A1", SUM(field1) AS "A2", AVG(field2) AS "A3" FROM table WHERE field4 = 1
