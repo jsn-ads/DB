@@ -123,3 +123,25 @@ SELECT GROUP BY
     SELECT SUM(field) AS "total", field1 FROM table GROUP BY field2
 
     GROUP BY : "o group by deve ser utilizado junto com SUM ou AVG ou COUNT, pois a forma correta de utiliza e agrupar trazendo resultado ex: tenho total 300 alunos e 5 turmas , ele vai trazer quantos alunos por turma tem"
+
+SUB SELECT
+
+    tipo 1
+
+    "sub select antes do FROM"
+
+    SELECT *, 
+        (
+            SELECT B.name FROM B WHERE B.id = A.id_B
+        ) AS fornecedores
+    FROM A
+
+    "esta consulta traz todos produtos de uma empresa e nome dessa empresa"
+
+    tipo 2 
+
+    "sub select no WHERE"
+
+    SELECT * FROM A WHERE (SELECT B.name WHERE B.id = A.id_B ) = "SAMSUNG"
+
+    OBS : "se o subselect trazer + de 1 resultado por registro pode ocasionar erro e nesse caso deve se usa LIMIT"
