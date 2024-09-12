@@ -145,3 +145,12 @@ SUB SELECT
     SELECT * FROM A WHERE (SELECT B.name WHERE B.id = A.id_B ) = "SAMSUNG"
 
     OBS : "se o subselect trazer + de 1 resultado por registro pode ocasionar erro e nesse caso deve se usa LIMIT"
+
+JOIN 
+    INNER 
+
+    SELECT A.id, A.nome , B.nome AS fornecedor 
+    FROM A
+    INNER JOIN B
+    ON B.id = A.id_B
+    
