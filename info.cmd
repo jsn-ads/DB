@@ -149,8 +149,11 @@ SUB SELECT
 JOIN 
     INNER 
 
-    SELECT A.id, A.nome , B.nome AS fornecedor 
-    FROM A
-    INNER JOIN B
-    ON B.id = A.id_B
+        SELECT A.id, A.nome , B.nome AS fornecedor 
+        FROM A
+        INNER JOIN B
+        ON B.id = A.id_B
     
+    OBS : "INNER JOIN retorna apenas registro de estiverem ligados em ambas a tabelas ex: 'se um dado que tiver A e não tiver ligação com B esse registro não e retornado' ".
+    OBS : "LEFT JOIN retorna todos os registro da tabela A independente se tiver ou não ligação com a tabela B"
+    OBS : "RIGHT JOIN retorna todos os registro da tabela B independente se tiver ou não ligação com a tabela A"
